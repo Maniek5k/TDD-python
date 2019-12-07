@@ -5,6 +5,7 @@ calc = calculator_python
 
 
 class TestCalculator(unittest.TestCase):
+
     def test_calc_sum(self):
         summ1 = calc.calc_sum(5, 10)
         summ2 = calc.calc_sum(12, 11)
