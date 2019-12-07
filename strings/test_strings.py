@@ -23,7 +23,7 @@ class TestStrings(unittest.TestCase):
 
     def test_title(self):
         result = strings.return_title('this is test phrase')
-        self.assertEqual(result, 'This Is-- Test Phrase')
+        self.assertEqual(result, 'This Is Test Phrase')
 
 
 if __name__ == "__main__":
