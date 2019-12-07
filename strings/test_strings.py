@@ -14,10 +14,16 @@ class TestStrings(unittest.TestCase):
         self.assertEqual(result, 'lower')
 
     def test_capitalize(self):
-        result = strings.returl_capitalize('capitalize')
+        result = strings.return_capitalize('capitalize')
         self.assertEqual(result, 'Capitalize')
 
-    def
+    def test_len(self):
+        result = strings.return_length('length')
+        self.assertEqual(result, 6)
+
+    def test_title(self):
+        result = strings.return_title('this is test phrase')
+        self.assertEqual(result, 'This Is Test Phrase')
 
 
 if __name__ == "__main__":
