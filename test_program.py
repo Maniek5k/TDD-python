@@ -19,6 +19,5 @@ class TestProgram(unittest.TestCase):
         self.assertEqual(hello.split(), ['Hello', 'World'])
 
 
-
 if __name__ == "__main__":
     unittest.main()
