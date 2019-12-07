@@ -8,13 +8,17 @@ def return_param(param):
 
 def hello_world():
     return "Hello World"
-
-print("Podaj pierwsza liczbe: ")
-input1 = int(input())
-print("Podaj druga liczbe")
-input2 = int(input())
-print("Podaj operacje: (1=sum, 2=diff, 3=multiply, 4=divide")
-input_operation = input()
+try:
+    print("Podaj pierwsza liczbe: ")
+    input1 = int(input())
+    print("Podaj druga liczbe")
+    input2 = int(input())
+    print("Podaj operacje: (1=sum, 2=diff, 3=multiply, 4=divide")
+    input_operation = input()
+except SyntaxError:
+    input1 = None
+    input2 = None
+    input_operation = None
 
 
 def calc_sum(a, b):
